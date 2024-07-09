@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container-one {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: url(../img/dark.webp);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 1px;
+}
+
+.hero-one {
+  height: 600px;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  & .title {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #801f1f;
+  }
+
+  & .subtitle {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    color: #ffffff93;
+  }
+
+  & .button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 0.4em 1em;
+    margin-left: 1rem;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    box-shadow: 0 0 15px rgba(228, 93, 93, 0.2);
+  }
+
+  & .tumbmage {
+    width: 40%;
+    transition: transform 0.3s ease;
+  }
+
+  .tumbmage:hover {
+    transform: scale(1.1);
+  }
+}
+
+.header-one {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 5rem;
+  height: fit-content;
+  color: #000000;
+  background: linear-gradient(
+    100deg,
+    #0a0709 0%,
+    #c2292998 0%,
+    #000000ee 45%,
+    #ffffff49 100%
+  );
+}
+
+& .btn {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.212);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-primary-1);
+  overflow: hidden;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: rgb(56, 38, 38);
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+}
+
+.logo img {
+  width: 90px; 
+  height: auto;
+
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 100px;
+  background-image: url(../img/HAMBLE.jpg);
+}
+
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: calc(25% - 50px);
+}
+
+.card-wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-banner-image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.card-description {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Button styling */
+.card-button-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-btn {
+  background-color: #4d3131;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+  background-color: #00f735;
+}
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #f0f4f8;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+
+.feature:nth-child(1) {
+  background-color: #140707fb;
+}
+
+.feature:nth-child(2) {
+  background-color: #00000041;
+}
+
+.feature:nth-child(3) {
+  background-color: #e8f5e9;
+}
+
+/* Feature icon styling */
+.feature-icon-wrapper {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-icon {
+  width: 450px;
+  height: 550px;
+}
+
+.feature-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Feature text styling */
+.feature-text {
+  flex: 2;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.feature-title {
+  font-style: "Poppins";
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Alternating feature positioning */
+.feature-left {
+  flex-direction: row; /* Icon on left, text on right */
+}
+
+.feature-right {
+  flex-direction: row; /* Icon on right, text on left */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .feature-left,
+  .feature-right {
+    flex-direction: column;
+  }
+
+  .feature-text {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .feature-icon-wrapper {
+    padding: 0;
+  }
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* AquaFlask Footer Styles */
+.aquaflask-footer {
+  background: linear-gradient(
+    100deg,
+    #000000 0%,
+    #4b1f1f 0%,
+    #241414 45%,
+    #3a1010 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+  list-style: none;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul li a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  padding: 10px 0;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  margin: 0;
+}
