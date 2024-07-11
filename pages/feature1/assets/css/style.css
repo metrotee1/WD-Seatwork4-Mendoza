@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .container-one {
@@ -14,59 +14,56 @@
   background-position: center;
   background-size: cover;
   color: white;
-  font-size: 1px;
 }
 
 .hero-one {
   height: 600px;
   padding: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0 40px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+}
 
-  & .title {
-    font-size: 5rem;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.1rem;
-    color: #801f1f;
-  }
+.hero-one .title {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #801f1f;
+}
 
-  & .subtitle {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    font-weight: 500;
-    letter-spacing: 1rem;
-    color: #ffffff93;
-  }
+.hero-one .subtitle {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
 
-  & .button {
-    text-decoration: none;
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-    border-radius: 4px;
-    font-size: 1.2rem;
-    padding: 0.4em 1em;
-    margin-left: 1rem;
-    color: white;
-    transition: box-shadow 0.3s ease-in-out;
-  }
+.hero-one .button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #000;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  padding: 0.4em 1em;
+  margin-left: 1rem;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
 
-  .button:hover {
-    box-shadow: 0 0 15px rgba(228, 93, 93, 0.2);
-  }
+.hero-one .button:hover {
+  box-shadow: 0 0 15px rgba(228, 93, 93, 0.2);
+}
 
-  & .tumbmage {
-    width: 40%;
-    transition: transform 0.3s ease;
-  }
+.hero-one .tumbmage {
+  width: 40%;
+  transition: transform 0.3s ease;
+}
 
-  .tumbmage:hover {
-    transform: scale(1.1);
-  }
+.hero-one .tumbmage:hover {
+  transform: scale(1.1);
 }
 
 .header-one {
@@ -77,17 +74,11 @@
   padding: 1rem 2rem;
   gap: 5rem;
   height: fit-content;
-  color: #000000;
-  background: linear-gradient(
-    100deg,
-    #0a0709 0%,
-    #c2292998 0%,
-    #000000ee 45%,
-    #ffffff49 100%
-  );
+  color: #000;
+  background: linear-gradient(100deg, #0a0709 0%, #c2292998 0%, #000000ee 45%, #ffffff49 100%);
 }
 
-& .btn {
+.header-one .btn {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
   backdrop-filter: blur(10px);
@@ -101,18 +92,17 @@
   color: var(--color-primary-1);
   overflow: hidden;
   transition: all 0.2s ease;
+}
 
-  &:hover {
-    background-color: rgb(56, 38, 38);
-    color: #ffffff;
-    transform: translateY(-3px);
-  }
+.header-one .btn:hover {
+  background-color: rgb(56, 38, 38);
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 .logo img {
-  width: 90px; 
+  width: 90px;
   height: auto;
-
 }
 
 .cards-container {
@@ -155,7 +145,6 @@
   color: #777;
 }
 
-/* Button styling */
 .card-button-wrapper {
   text-align: center;
   margin: 20px 0;
@@ -174,6 +163,7 @@
 .card-btn:hover {
   background-color: #00f735;
 }
+
 .features-container {
   display: flex;
   flex-direction: column;
@@ -182,7 +172,6 @@
   margin: 0;
   background-color: #f0f4f8;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .feature {
@@ -191,14 +180,12 @@
   margin: 10px 0;
   padding: 20px;
   width: 100%;
-  box-sizing: border-box;
   transition: transform 0.3s;
 }
 
 .feature:hover {
   transform: translateY(-10px);
 }
-
 
 .feature:nth-child(1) {
   background-color: #140707fb;
@@ -212,7 +199,6 @@
   background-color: #e8f5e9;
 }
 
-/* Feature icon styling */
 .feature-icon-wrapper {
   flex: 1;
   text-align: center;
@@ -221,15 +207,14 @@
 }
 
 .feature-icon {
-  width: 450px;
-  height: 550px;
+  max-width: 100%;
+  height: auto;
 }
 
 .feature-icon:hover {
   transform: scale(1.1);
 }
 
-/* Feature text styling */
 .feature-text {
   flex: 2;
   text-align: left;
@@ -237,7 +222,6 @@
 }
 
 .feature-title {
-  font-style: "Poppins";
   font-size: 40px;
   color: #333;
   margin-bottom: 10px;
@@ -250,16 +234,14 @@
   line-height: 1.5;
 }
 
-/* Alternating feature positioning */
 .feature-left {
-  flex-direction: row; /* Icon on left, text on right */
+  flex-direction: row;
 }
 
 .feature-right {
-  flex-direction: row; /* Icon on right, text on left */
+  flex-direction: row;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .feature {
     flex-direction: column;
@@ -282,22 +264,8 @@
   }
 }
 
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* AquaFlask Footer Styles */
-.aquaflask-footer {
-  background: linear-gradient(
-    100deg,
-    #000000 0%,
-    #4b1f1f 0%,
-    #241414 45%,
-    #3a1010 100%
-  );
+.KL-footer {
+  background: linear-gradient(100deg, #000000 0%, #4b1f1f 0%, #241414 45%, #3a1010 100%);
   color: #fff;
   text-align: center;
 }
@@ -332,13 +300,13 @@
 }
 
 .social-icons a {
-  color: #fff;
+  color: #f3f3f3bb;
   font-size: 24px;
   margin: 0 10px;
 }
 
 .social-icons a:hover {
-  color: #ccc;
+  color: #5c38384f;
 }
 
 ul {
@@ -350,7 +318,7 @@ ul li {
 }
 
 ul li a {
-  color: #fff;
+  color: #ffffff9c;
   text-decoration: none;
   font-size: 16px;
 }
@@ -359,11 +327,38 @@ ul li a:hover {
   color: #ccc;
 }
 
-.footer-copyright {
-  padding: 10px 0;
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.footer-copyright p {
-  font-size: 14px;
-  margin: 0;
+.signup-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #ff4b3e;
+}
+
+.footer-copyright {
+  padding: 10px 0;
 }
