@@ -24,7 +24,6 @@
 ![](https://visit-counter.vercel.app/counter.png?page=metrotee1/WD-Seatwork4-Mendoza)
 
 ---
-
 <br />
 <br />
 
