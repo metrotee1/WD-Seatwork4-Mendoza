@@ -162,7 +162,7 @@ header .spotify-button:hover {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 10; /* Ensure it's above other content */
+    z-index: 10;
 }
  
 .bottom-left-button .plus-button {
